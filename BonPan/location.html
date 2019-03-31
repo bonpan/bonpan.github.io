@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BONPAN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+     <header>
+       <div class="logo">
+         <a href="index.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+       </div>
+       <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">HOME</a>
+          <a href="projects.html">PRODUSE</a>
+          <a href="noutati.html">NOUTATI</a>
+          <a href="contact.html">CONTACTE</a>
+          <a href="about.html">DESPRE NOI</a>
+          <a href="services.html">SERVICII</a>
+          <a href="location.html">LOCATIA</a>
+          <a id="menu" href="#" class="icon">&#9776;</a>
+        </div>
+       </nav>
+     </header>
+     <main>
+       <h1>Location</h1>
+      <div id="map"></div>
+    </main>
+      <footer>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="projects.html">PRODUSE</a>
+          <a href="noutati.html">NOUTATI</a>
+          <a href="contact.html">CONTACTE</a>
+          <a href="about.html">DESPRE NOI</a>
+          <a href="services.html">SERVICII</a>
+          <a href="location.html">LOCATIA</a>
+        </nav>
+        <div class="logo">
+          <a href="index.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+        </div>
+        <div class="social">
+          <a href="#"><img src="img/social/em.png" alt=""></a>
+          <a href="#"><img src="img/social/face.png" alt=""></a>
+          <a href="#"><img src="img/social/goo.png" alt=""></a>
+          <a href="#"><img src="img/social/inst.png" alt=""></a>
+          <a href="#"><img src="img/social/pint.png" alt=""></a>
+        </div>
+        <p>BONPAN. 2019</p>
+      </footer>
+
+
+
+
+      <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 46.9868874, lng: 28.8986162};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyA-wzjTc3uikMMqg7EfXpfvYO0QqvFz1ts
+&callback=initMap">
+    </script>
+
+
+
+
+     <script type="js/script.js"></script>
+  </body>
+</html>
